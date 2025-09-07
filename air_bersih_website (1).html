@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Bersih Pertandon 1200 liter</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    header { background: rgba(33, 150, 243, 0.8); color: white; padding: 20px 0; text-align: center; position: relative; z-index: 2; }
+    header h1 { margin: 0; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x600?text=Foto+Produk+Air+Bersih') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .contact form { display: flex; flex-direction: column; }
+    .contact input, .contact textarea { margin-bottom: 10px; padding: 10px; font-size: 1rem; }
+    .contact button { background: #2196f3; color: white; border: none; padding: 10px; cursor: pointer; font-size: 1rem; }
+    footer { background: #0d47a1; color: white; text-align: center; padding: 15px 10px; margin-top: 20px; }
+
+    /* Galeri Foto */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .gallery img { width: 100%; border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); }
+
+    /* Tombol Mengambang */
+    .float-btn {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .whatsapp-float { right: 90px; background-color: #25d366; color: #fff; }
+    .phone-float { right: 20px; background-color: #34b7f1; color: #fff; }
+    .float-btn i { margin: 0; }
+  </style>
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Air Bersih Pertandon 1200 liter</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#contact">Kontak</a>
+      <a href="#location">Lokasi</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Solusi Air Bersih untuk Anda</h2>
+    <p>Volume 1200 liter (~6 drum). Air dijamin bersih, bening, tidak berbau, tidak berasa, dan tidak berwarna.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Tentang Layanan Kami</h2>
+    <p>
+      Volume 1200 liter (-+6 drum). Air dijamin bersih bening, tidak berbau, tidak berasa, tidak berwarna.
+      Tidak mengandung logam berat. Layak untuk dikonsumsi. Aman untuk kolam ikan hias.
+      Parameter air: Ph 7-7.5 / TDS 75 - 120.
+    </p>
+    <p>
+      Bisa dibatalkan jika tidak sesuai keterangan. Harga menyesuaikan jarak ke lokasi, panjang selang,
+      posisi penampungan, dan kondisi jalan.
+    </p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galeri Produk</h2>
+    <p>Lihat beberapa dokumentasi air bersih dan tandon kami:</p>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250?text=Foto+1" alt="Foto Produk 1">
+      <img src="https://via.placeholder.com/400x250?text=Foto+2" alt="Foto Produk 2">
+      <img src="https://via.placeholder.com/400x250?text=Foto+3" alt="Foto Produk 3">
+      <img src="https://via.placeholder.com/400x250?text=Foto+4" alt="Foto Produk 4">
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Kontak Kami</h2>
+    <p>Hubungi kami untuk pemesanan atau informasi lebih lanjut:</p>
+    <ul>
+      <li>Telepon/HP: <a href="tel:081350801378">081350801378</a></li>
+      <li>WhatsApp: <a href="https://wa.me/6281350801378" target="_blank">+62 813-5080-1378</a></li>
+      <li>Email: info@airbersih1200liter.com</li>
+    </ul>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <section id="location" class="section">
+    <h2>Lokasi Kami</h2>
+    <p>Silakan kunjungi atau cek lokasi penampungan air kami melalui Google Maps:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.217110590833!2d110.36948957477724!3d-7.868941192121619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577f5e8c5b3d%3A0xabcdef123456789!2sContoh+Lokasi!5e0!3m2!1sid!2sid!4v1693833040000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Air Bersih Pertandon 1200 liter. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <!-- Tombol WhatsApp & Telepon Mengambang -->
+  <a href="https://wa.me/6281350801378" class="float-btn whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:081350801378" class="float-btn phone-float">
+    <i class="fas fa-phone"></i>
+  </a>
+
+</body>
+</html>
